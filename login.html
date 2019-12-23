@@ -1,0 +1,44 @@
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<script language=JavaScript>
+<!--
+function Login(){
+var done=0;
+var username=document.login.username.value;
+username=username.toLowerCase();
+var password=document.login.password.value;
+password=password.toLowerCase();
+
+//CADASTRO DE USUÁRIOS
+
+if (username=="jyasmg" && password=="jyas") { window.location="DuvidososMG.html"; done=1; }
+if (username=="jyasba" && password=="jyas") { window.location="DuvidososBA.html"; done=1; }
+if (username=="jyasse" && password=="jyas") { window.location="DuvidososSE.html"; done=1; }
+if (username=="jyas" && password=="master") { window.location="DuvidososGeral.html"; done=1; }
+if (done==0) { alert("login invalido!"); }
+}
+//-->
+</SCRIPT>
+<BODY>
+
+<CENTER>
+<img width="150px" height="80px" src="V:\Ger. Financ\Clientes Duvidosos\logo.jpg"/>
+<FORM name=login>
+<TABLE cellPadding=3 border=0>
+  <TBODY>
+  <TR>
+    <TD><FONT face=verdana color=#ffffff size=1>TEST2</FONT></TD>
+    <TD colSpan=2>
+      <CENTER><FONT face=verdana color=#000000 size=1>ACESSO RESTRITO 
+      </FONT></CENTER></TD></TR>
+  <TR>
+    <TD><FONT face=verdana color=#000000 size=2>Usuario:</FONT></TD>
+    <TD><INPUT name=username></TD></TR>
+  <TR>
+    <TD><FONT face=verdana color=#000000 size=2>Senha:</FONT></TD>
+    <TD><INPUT type=password name=password></TD></TR></CENTER>
+  <TR>
+    <TD><FONT face=verdana color=#ffffff size=1>TEST</FONT></TD> 	
+    <TD align=middle colSpan=2><INPUT onclick=Login() type=button style="width:144;height:20" value=Entrar></TD></TR></TBODY></TABLE></FORM>
+
+<BR></FONT></BODY></HTML>
